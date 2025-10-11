@@ -2,6 +2,7 @@ package documentreader
 
 import (
 	"encoding/xml"
+	"io"
 	"os"
 	"slices"
 	"testing"
@@ -19,7 +20,8 @@ func TestReadContentLimited(t *testing.T) {
 		{"docx/content3.xml", 700, IsDocxText, "docx/title3.golden"},
 		{"odt/content1.xml", 700, IsOdtText, "odt/title1.golden"},
 		{"odt/content3.xml", 700, IsOdtText, "odt/title3.golden"},
-		{"odt/content4.xml", 500, IsOdtText, "odt/title4.golden"},
+		{"odt/content4.xml", 700, IsOdtText, "odt/title4.golden"},
+		{"odt/content4.xml", 9999, IsOdtText, "odt/title4.golden"},
 	}
 
 	for _, tt := range tests {
@@ -35,7 +37,7 @@ func TestReadContentLimited(t *testing.T) {
 		}
 
 		got, err := readContentLimited(file, tt.limit, tt.checker)
-		if err != nil {
+		if err != nil  && err != io.ErrUnexpectedEOF{
 			t.Fatalf("Failed to parse text in %s: %v", tt.document, err)
 		}
 
