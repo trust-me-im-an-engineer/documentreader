@@ -17,7 +17,7 @@ var spaceRegex = regexp.MustCompile(`\s+`)
 func TextLimited(r io.Reader, limit int) ([]byte, error) {
 	decoder := xml.NewDecoder(r)
 	text := make([]byte, 0, limit)
-	runeCount := 0
+	runeLen := 0
 	for {
 		token, err := decoder.Token()
 		if err != nil {
@@ -40,10 +40,10 @@ func TextLimited(r io.Reader, limit int) ([]byte, error) {
 		n := spaceRegex.ReplaceAll(paragraph, []byte(" "))
 		normalized := bytes.TrimSpace(n)
 
-		runeLen := utf8.RuneCount(normalized)
+		paragraphRuneLen := utf8.RuneCount(normalized)
 
-		if runeCount+runeLen >= limit {
-			sliced, err := runes.Take(normalized, limit-runeCount)
+		if runeLen+paragraphRuneLen >= limit {
+			sliced, err := runes.Take(normalized, limit-runeLen)
 			if err != nil {
 				// Should never happen since size to take is checked and xml validates runes
 				panic(err)
@@ -54,5 +54,6 @@ func TextLimited(r io.Reader, limit int) ([]byte, error) {
 
 		text = append(text, normalized...)
 		text = append(text, byte(' '))
+		runeLen += paragraphRuneLen
 	}
 }

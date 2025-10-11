@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+	xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+	xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+	xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+	xmlns:w10="urn:schemas-microsoft-com:office:word"
+	xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+	xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+	xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+	xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+	xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+	xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+	xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+	mc:Ignorable="w14 w15 wp14">
+	<w:body>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="35B000CC" wp14:textId="33B4F384">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="20" />
+					<w:szCs w:val="20" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="20" />
+					<w:szCs w:val="20" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="64B8D13B" wp14:textId="05C7C3E5">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>федеральное государственное автономное образовательное учреждение высшего
+					образования</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="30ABA076" wp14:textId="61D02EC5">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="20" />
+					<w:szCs w:val="20" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="20" />
+					<w:szCs w:val="20" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>«САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ АЭРОКОСМИЧЕСКОГО
+					ПРИБОРОСТРОЕНИЯ»</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="2B8A16A7" wp14:textId="1C357355">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="20" />
+					<w:szCs w:val="20" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="20" />
+					<w:szCs w:val="20" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>(ГУАП)</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="3AA6B6EB" wp14:textId="1A6642F3">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:before="480" w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>КАФЕДРА ИСТОРИИ</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="1DFB3B6F" wp14:textId="1CA44CE2">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:before="120" w:after="160" w:line="360" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="15E109E5" wp14:textId="729265C7">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:before="120" w:after="160" w:line="360" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="3A767923" wp14:textId="3E9A59DB">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:widowControl w:val="0" />
+				<w:spacing w:before="120" w:after="160" w:line="360" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="24" />
+					<w:szCs w:val="24" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="5746BBC3" wp14:textId="5FA5E425">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="left" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>преподаватель</w:t>
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Н.А.Бабина</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="2DBC3FFB" wp14:textId="1FB9BCBF">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="1B481AE9" wp14:textId="3AD4A3CE">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="6FDC1718" wp14:textId="38C3BFE9">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="4838D0FB" wp14:textId="0BCF2238">
+			<w:pPr>
+				<w:spacing w:before="0" w:beforeAutospacing="off" w:after="160"
+					w:afterAutospacing="off" w:line="360" w:lineRule="auto" />
+				<w:ind w:left="0" w:right="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="36" />
+					<w:szCs w:val="36" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="36" />
+					<w:szCs w:val="36" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Доклад</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="3D8D7806" wp14:textId="568255B6">
+			<w:pPr>
+				<w:spacing w:after="160" w:line="360" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>по дисциплине История</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="68374FF8" wp14:textId="29F5607B">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>на тему: “борьба за власть после смерти Ивана Грозного”</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="70C0387C" wp14:textId="11743A11">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="587F7A89" wp14:textId="64ED84D7">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="360" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="2E268B75" wp14:textId="4209789D">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="360" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Работу выполнил</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="4CB91602" wp14:textId="3B472BA0">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>студент гр. 4342</w:t>
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r>
+				<w:tab />
+			</w:r>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>С.М.Иванов</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="39765A00" wp14:textId="10D66AE8">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="5E80A9EC" wp14:textId="61BE07A8">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="4D1C4FE9" wp14:textId="3879EA17">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="56DE2478" wp14:textId="5C974A3D">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Санкт-Петербург</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="11B4D297" wp14:textId="744D6DB5">
+			<w:pPr>
+				<w:widowControl w:val="0" />
+				<w:spacing w:after="160" w:line="240" w:lineRule="auto" />
+				<w:ind w:firstLine="0" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"
+						w:eastAsia="Times New Roman" w:cs="Times New Roman" />
+					<w:b w:val="0" />
+					<w:bCs w:val="0" />
+					<w:i w:val="0" />
+					<w:iCs w:val="0" />
+					<w:caps w:val="0" />
+					<w:smallCaps w:val="0" />
+					<w:noProof w:val="0" />
+					<w:color w:val="000000" w:themeColor="text1" w:themeTint="FF" w:themeShade="FF" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>2023</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="6DCACC6E" wp14:textId="2E409F7E">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:jc w:val="center" />
+				<w:rPr>
+					<w:b w:val="1" />
+					<w:bCs w:val="1" />
+					<w:noProof w:val="0" />
+					<w:sz w:val="36" />
+					<w:szCs w:val="36" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:b w:val="1" />
+					<w:bCs w:val="1" />
+					<w:noProof w:val="0" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Борьба за власть после смерти царя Ивана Грозного</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="2D4BFF1C" wp14:textId="36719629">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:ind w:firstLine="708" />
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t xml:space="preserve">После смерти Ивана IV Грозного в 1584 году трон перешел к его умственно несостоятельному сыну, Федору (1584–1598). Новый царь не обладал способностью к управлению государством и доверил управление Россией своему опекуну, Борису Годунову (1552–1605). У Федора не было наследников, и когда в 1591 году при неясных обстоятельствах погиб последний сын Ивана IV, Дмитрий, династия Рюриковичей прекратилась. </w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="6F732C16" wp14:textId="0E20F3B2">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:ind w:firstLine="708" />
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Годунов считался опекуном Федора до своей смерти, и в 1598 году Земский собор
+					избрал его на царский трон. Однако после коронации белая полоса правления
+					Годунова кончилась: в начале XVII века Россию постигли стихийные бедствия. С
+					1601 по 1603 годы голод охватил всю страну.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="1B8E3751" wp14:textId="5864E4C4">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:ind w:firstLine="708" />
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t xml:space="preserve">В 1605 году Борис Годунов неожиданно скончался, и на престол вступил его </w:t>
+			</w:r>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>16летний</w:t>
+			</w:r>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t xml:space="preserve"> сын. В этой обстановке польско-литовское государство Речь Посполитая воспользовалось ситуацией, поддержав самозванца, который называл себя царевичем Дмитрием и претендовал на престол, получив имя Лжедмитрий I. В 1604 году Лжедмитрий вторгся в Россию. Годунов внезапно скончался, и его войска, убив жену и сына царя, перешли на сторону Лжедмитрия, который взошел на трон как Лжедмитрий.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml"
+			wp14:paraId="7F0691EA" wp14:textId="796F6540">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:ind w:firstLine="708" />
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="32" />
+					<w:szCs w:val="32" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="1B499023" w:rsidR="1B499023">
+				<w:rPr>
+					<w:noProof w:val="0" />
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+					<w:lang w:val="ru-RU" />
+				</w:rPr>
+				<w:t>Это событие запустило период истории, названный Смутой, характеризующийся
+					борьбой между боярскими семействами за власть (1605–1613). 17 мая 1606 году
+					заговорщики убили Лжедмитрия, и на трон вступил боярин Василий Шуйский
+					(1606–1610). Он сумел устранить нового самозванца, Лжедмитрия II, но допустил
+					польскую и затем шведскую оккупацию значительной части северо-западных земель.
+					Свергнутый царь был пострижен в монахи, и власть временно перешла в руки
+					комиссии из семи бояр. Боярское правительство управляло страной примерно 3 года
+					(1610–1613), пока мощное национальное ополчение, организованное Кузьмой Мининым
+					и Дмитрием Пожарским, не освободило русские земли от оккупантов. На престол
+					взошел Михаил Романов, положив начало династии Романовых, которая длилась до
+					самого окончания монархии государства.</w:t>
+			</w:r>
+		</w:p>
+		<w:p w:rsidP="1B499023" wp14:paraId="501817AE"
+			xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordml" wp14:textId="55A736AF">
+			<w:pPr>
+				<w:pStyle w:val="Normal" />
+				<w:rPr>
+					<w:sz w:val="28" />
+					<w:szCs w:val="28" />
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:sectPr>
+			<w:pgSz w:w="11906" w:h="16838" w:orient="portrait" />
+			<w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="720"
+				w:footer="720" w:gutter="0" />
+			<w:cols w:space="720" />
+			<w:docGrid w:linePitch="360" />
+		</w:sectPr>
+	</w:body>
+</w:document>
