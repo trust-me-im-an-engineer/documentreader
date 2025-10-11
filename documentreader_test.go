@@ -1,20 +1,25 @@
-package docx
+package documentreader
 
 import (
+	"encoding/xml"
 	"os"
 	"slices"
 	"testing"
 )
 
-func TestRead(t *testing.T) {
+func TestReadContentLimited(t *testing.T) {
 	var tests = []struct {
 		document string
 		limit    int64
+		checker  func(xml.StartElement) bool
 		golden   string
 	}{
-		{"document1.xml", 700, "title1.golden"},
-		{"document2.xml", 700, "title2.golden"},
-		{"document3.xml", 700, "title3.golden"},
+		{"docx/content1.xml", 700, IsDocxText, "docx/title1.golden"},
+		{"docx/content2.xml", 700, IsDocxText, "docx/title2.golden"},
+		{"docx/content3.xml", 700, IsDocxText, "docx/title3.golden"},
+		{"odt/content1.xml", 700, IsOdtText, "odt/title1.golden"},
+		{"odt/content3.xml", 700, IsOdtText, "odt/title3.golden"},
+		{"odt/content4.xml", 500, IsOdtText, "odt/title4.golden"},
 	}
 
 	for _, tt := range tests {
@@ -29,7 +34,7 @@ func TestRead(t *testing.T) {
 			t.Fatalf("Failed to open %s: %v", tt.document, err)
 		}
 
-		got, err := ReadLimited(file, tt.limit)
+		got, err := readContentLimited(file, tt.limit, tt.checker)
 		if err != nil {
 			t.Fatalf("Failed to parse text in %s: %v", tt.document, err)
 		}
