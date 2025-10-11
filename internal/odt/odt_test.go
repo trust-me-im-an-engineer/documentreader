@@ -1,4 +1,4 @@
-package docx
+package odt
 
 import (
 	"os"
@@ -13,8 +13,8 @@ func TestRead(t *testing.T) {
 		golden   string
 	}{
 		{"document1.xml", 700, "title1.golden"},
-		{"document2.xml", 700, "title2.golden"},
 		{"document3.xml", 700, "title3.golden"},
+		{"document4.xml", 500, "title4.golden"},
 	}
 
 	for _, tt := range tests {

@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content xmlns:css3t="http://www.w3.org/TR/css3-text/"
+	xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms"
+	xmlns:dom="http://www.w3.org/2001/xml-events"
+	xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+	xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+	xmlns:math="http://www.w3.org/1998/Math/MathML"
+	xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+	xmlns:ooo="http://openoffice.org/2004/office"
+	xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+	xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0"
+	xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+	xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+	xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2"
+	xmlns:tableooo="http://openoffice.org/2009/table"
+	xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+	xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+	xmlns:rpt="http://openoffice.org/2005/report"
+	xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0"
+	xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+	xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+	xmlns:officeooo="http://openoffice.org/2009/office"
+	xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+	xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+	xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0"
+	xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+	xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0"
+	office:version="1.4">
+	<office:scripts />
+	<office:font-face-decls>
+		<style:font-face style:name="Arial" svg:font-family="Arial"
+			style:font-family-generic="swiss" />
+		<style:font-face style:name="Arial1" svg:font-family="Arial"
+			style:font-family-generic="system" style:font-pitch="variable" />
+		<style:font-face style:name="Calibri" svg:font-family="Calibri"
+			style:font-family-generic="roman" style:font-pitch="variable" />
+		<style:font-face style:name="Calibri1" svg:font-family="Calibri"
+			style:font-family-generic="system" style:font-pitch="variable" />
+		<style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;"
+			style:font-family-generic="system" style:font-pitch="variable" />
+		<style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;"
+			style:font-family-generic="swiss" style:font-pitch="variable" />
+		<style:font-face style:name="Liberation Serif"
+			svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman"
+			style:font-pitch="variable" />
+		<style:font-face style:name="Microsoft YaHei" svg:font-family="&apos;Microsoft YaHei&apos;"
+			style:font-family-generic="system" style:font-pitch="variable" />
+		<style:font-face style:name="Tahoma" svg:font-family="Tahoma"
+			style:font-family-generic="system" style:font-pitch="variable" />
+		<style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;"
+			style:font-family-generic="roman" style:font-pitch="variable" />
+		<style:font-face style:name="Times New Roman1" svg:font-family="&apos;Times New Roman&apos;"
+			style:font-family-generic="system" style:font-pitch="variable" />
+		<style:font-face style:name="Times New Roman2" svg:font-family="&apos;Times New Roman&apos;"
+			style:font-adornments="Regular" style:font-family-generic="roman"
+			style:font-pitch="variable" />
+	</office:font-face-decls>
+	<office:automatic-styles>
+		<style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard"
+			style:master-page-name="First_20_Page">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" style:page-number="auto" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="10pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="10pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="10pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="12pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="12pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="12pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="10pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="10pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="10pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P4" style:family="paragraph" style:parent-style-name="Heading_20_5">
+			<style:paragraph-properties fo:margin-top="0.3335in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="12pt" fo:letter-spacing="normal" fo:language="ru" fo:country="RU"
+				fo:font-style="normal" fo:font-weight="normal" officeooo:rsid="00269ffa"
+				officeooo:paragraph-rsid="00269ffa" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="12pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="12pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:orphans="0" fo:widows="0"
+				fo:text-indent="0in" style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="12pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="12pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="12pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:orphans="0" fo:widows="0"
+				fo:text-indent="0in" style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="start"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties style:font-name="Times New Roman" />
+		</style:style>
+		<style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="18pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="18pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="18pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="16pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="16pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:text-align="center"
+				style:justify-single-word="false" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties style:font-name="Times New Roman" />
+		</style:style>
+		<style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties officeooo:paragraph-rsid="00337f44" />
+		</style:style>
+		<style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:text-align="center"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="150%" fo:orphans="0" fo:widows="0"
+				fo:text-indent="0in" style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:orphans="0" fo:widows="0"
+				fo:text-indent="0in" style:auto-text-indent="false" />
+			<style:text-properties style:font-name="Times New Roman" />
+		</style:style>
+		<style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:orphans="0" fo:widows="0"
+				fo:text-indent="0in" style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:orphans="0" fo:widows="0"
+				fo:text-indent="0in" style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:text-position="super 58%"
+				style:font-name="Times New Roman" fo:font-size="14pt" fo:language="ru"
+				fo:country="RU" fo:font-style="normal" fo:font-weight="normal"
+				style:font-name-asian="Times New Roman1" style:font-size-asian="14pt"
+				style:font-style-asian="normal" style:font-weight-asian="normal"
+				style:font-name-complex="Times New Roman1" style:font-size-complex="14pt"
+				style:font-style-complex="normal" style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties style:font-name="Times New Roman" />
+		</style:style>
+		<style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="002530f3"
+				style:font-name-asian="Times New Roman1" style:font-size-asian="14pt"
+				style:font-style-asian="normal" style:font-weight-asian="normal"
+				style:font-name-complex="Times New Roman1" style:font-size-complex="14pt"
+				style:font-style-complex="normal" style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="bold" officeooo:rsid="003ce621" officeooo:paragraph-rsid="003ce621"
+				style:font-name-asian="Times New Roman1" style:font-size-asian="14pt"
+				style:font-style-asian="normal" style:font-weight-asian="bold"
+				style:font-name-complex="Times New Roman1" style:font-size-complex="14pt"
+				style:font-style-complex="normal" style:font-weight-complex="bold">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="003ce621"
+				officeooo:paragraph-rsid="003ce621" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="003deb1f"
+				officeooo:paragraph-rsid="003deb1f" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="00461cd9"
+				officeooo:paragraph-rsid="00461cd9" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="002530f3"
+				officeooo:paragraph-rsid="003deb1f" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="004696fa"
+				officeooo:paragraph-rsid="004696fa" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="003f4337"
+				officeooo:paragraph-rsid="003f4337" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="002530f3"
+				officeooo:paragraph-rsid="003f4337" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard">
+			<style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.111in"
+				style:contextual-spacing="false" fo:line-height="100%" fo:text-align="justify"
+				style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0in"
+				style:auto-text-indent="false" />
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="14pt" fo:language="en" fo:country="US" fo:font-style="normal"
+				fo:font-weight="normal" officeooo:rsid="002530f3"
+				officeooo:paragraph-rsid="0048aeeb" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T1" style:family="text">
+			<style:text-properties officeooo:rsid="002ece12" />
+		</style:style>
+		<style:style style:name="T2" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" fo:font-size="14pt" fo:language="ru"
+				fo:country="RU" fo:font-style="normal" fo:font-weight="normal"
+				officeooo:rsid="002fce59" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T3" style:family="text">
+			<style:text-properties officeooo:rsid="00337f44" />
+		</style:style>
+		<style:style style:name="T4" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" fo:font-size="16pt" fo:language="ru"
+				fo:country="RU" fo:font-style="normal" fo:font-weight="normal"
+				style:font-name-asian="Times New Roman1" style:font-size-asian="16pt"
+				style:font-style-asian="normal" style:font-weight-asian="normal"
+				style:font-name-complex="Times New Roman1" style:font-size-complex="16pt"
+				style:font-style-complex="normal" style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T5" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" fo:font-size="16pt" fo:language="ru"
+				fo:country="RU" fo:font-style="normal" fo:font-weight="normal"
+				officeooo:rsid="00307568" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="16pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="16pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T6" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" style:font-name="Times New Roman"
+				fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-style="normal"
+				fo:font-weight="normal" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="16pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="16pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T7" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" fo:font-size="14pt" fo:language="ru"
+				fo:country="RU" fo:font-style="normal" fo:font-weight="normal"
+				style:font-name-asian="Times New Roman1" style:font-size-asian="14pt"
+				style:font-style-asian="normal" style:font-weight-asian="normal"
+				style:font-name-complex="Times New Roman1" style:font-size-complex="14pt"
+				style:font-style-complex="normal" style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T8" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" fo:font-size="14pt" fo:language="en"
+				fo:country="US" fo:font-style="normal" fo:font-weight="normal"
+				officeooo:rsid="00197126" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T9" style:family="text">
+			<style:text-properties officeooo:rsid="00307568" />
+		</style:style>
+		<style:style style:name="T10" style:family="text">
+			<style:text-properties fo:font-variant="normal" fo:text-transform="none"
+				fo:color="#000000" loext:opacity="100%" fo:font-size="14pt" fo:language="en"
+				fo:country="US" fo:font-style="normal" fo:font-weight="normal"
+				officeooo:rsid="002530f3" style:font-name-asian="Times New Roman1"
+				style:font-size-asian="14pt" style:font-style-asian="normal"
+				style:font-weight-asian="normal" style:font-name-complex="Times New Roman1"
+				style:font-size-complex="14pt" style:font-style-complex="normal"
+				style:font-weight-complex="normal">
+				<loext:char-complex-color loext:theme-type="dark1" loext:color-type="theme">
+					<loext:transformation loext:type="tint" loext:value="0" />
+					<loext:transformation loext:type="shade" loext:value="0" />
+				</loext:char-complex-color>
+			</style:text-properties>
+		</style:style>
+		<style:style style:name="T11" style:family="text">
+			<style:text-properties fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="T12" style:family="text">
+			<style:text-properties officeooo:rsid="00343e7a" />
+		</style:style>
+		<style:style style:name="T13" style:family="text">
+			<style:text-properties officeooo:rsid="004354b0" />
+		</style:style>
+		<style:style style:name="T14" style:family="text">
+			<style:text-properties fo:font-weight="bold" officeooo:rsid="0048aeeb"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="T15" style:family="text">
+			<style:text-properties officeooo:rsid="00494073" />
+		</style:style>
+		<style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
+			<style:graphic-properties style:vertical-pos="from-top" style:vertical-rel="paragraph"
+				style:horizontal-pos="from-left" style:horizontal-rel="paragraph"
+				style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%"
+				draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%"
+				draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" />
+		</style:style>
+		<style:style style:name="fr2" style:family="graphic" style:parent-style-name="Graphics">
+			<style:graphic-properties style:vertical-pos="top" style:vertical-rel="paragraph"
+				style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%"
+				draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%"
+				draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" />
+		</style:style>
+		<style:style style:name="fr3" style:family="graphic" style:parent-style-name="Graphics">
+			<style:graphic-properties style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)"
+				draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%"
+				draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%"
+				draw:color-mode="standard" />
+		</style:style>
+	</office:automatic-styles>
+	<office:body>
+		<office:text text:use-soft-page-breaks="true">
+			<text:sequence-decls>
+				<text:sequence-decl text:display-outline-level="0" text:name="Illustration" />
+				<text:sequence-decl text:display-outline-level="0" text:name="Table" />
+				<text:sequence-decl text:display-outline-level="0" text:name="Text" />
+				<text:sequence-decl text:display-outline-level="0" text:name="Drawing" />
+				<text:sequence-decl text:display-outline-level="0" text:name="Figure" />
+			</text:sequence-decls>
+			<text:p text:style-name="P1">МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ
+				ФЕДЕРАЦИИ</text:p>
+			<text:p text:style-name="P2">федеральное государственное автономное образовательное
+				учреждение высшего образования</text:p>
+			<text:p text:style-name="P3">«САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ
+				АЭРОКОСМИЧЕСКОГО ПРИБОРОСТРОЕНИЯ»</text:p>
+			<text:p text:style-name="P3">(ГУАП)</text:p>
+			<text:h text:style-name="P4" text:outline-level="5">КАФЕДРА <text:span
+					text:style-name="T1">44</text:span></text:h>
+			<text:p text:style-name="P5" />
+			<text:p text:style-name="P5" />
+			<text:p text:style-name="P6">Преподаватель</text:p>
+			<text:p text:style-name="P7">
+				<text:span text:style-name="T2">д-р техн. наук, профессор </text:span>
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:span text:style-name="T2">Гордеев А.В.</text:span>
+			</text:p>
+			<text:p text:style-name="P8" />
+			<text:p text:style-name="P8" />
+			<text:p text:style-name="P8" />
+			<text:p text:style-name="P9">Отчет</text:p>
+			<text:p text:style-name="P10">по лабораторной работе № <text:span text:style-name="T3">1</text:span></text:p>
+			<text:p text:style-name="P11">
+				<text:span text:style-name="T4">по дисциплине </text:span>
+				<text:span text:style-name="T5">Открытые системы</text:span>
+			</text:p>
+			<text:p text:style-name="P12"><text:span text:style-name="T6">на тему: «</text:span>Установка
+				GNU/Linux как второй операционной системы<text:span text:style-name="T6">»</text:span></text:p>
+			<text:p text:style-name="P13" />
+			<text:p text:style-name="P14">Работу выполнил</text:p>
+			<text:p text:style-name="P15">
+				<text:span text:style-name="T7">студент гр. 434</text:span>
+				<text:span text:style-name="T8">2</text:span>
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:tab />
+				<text:span text:style-name="T9">Иванов С.М.</text:span>
+			</text:p>
+			<text:p text:style-name="P16" />
+			<text:p text:style-name="P16" />
+			<text:p text:style-name="P17" />
+			<text:p text:style-name="P16" />
+			<text:p text:style-name="P16" />
+			<text:p text:style-name="P18">Санкт-Петербург</text:p>
+			<text:p text:style-name="P19">
+				<text:span text:style-name="T7">202</text:span>
+				<text:span text:style-name="T10">5</text:span>
+			</text:p>
+			<text:p text:style-name="P20"><text:soft-page-break /><text:span text:style-name="T11"><text:tab />Цель
+				работы</text:span> научиться устанавливать Linux, <text:span text:style-name="T12">п</text:span>ознакомиться
+				с MBR и GPT, изучить процесс загрузки операционной системы.</text:p>
+			<text:p text:style-name="P20" />
+			<text:p text:style-name="P21"><text:tab />Ход работы:</text:p>
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22"><text:tab />Установили virtualbox с windows 11:</text:p>
+			<text:p text:style-name="P22">
+				<draw:frame draw:style-name="fr1" draw:name="Image2" text:anchor-type="char"
+					svg:x="0.0925in" svg:y="0in" svg:width="4.1366in" svg:height="4.611in"
+					draw:z-index="3">
+					<draw:image xlink:href="Pictures/100000010000021C0000025ABC66965B.png"
+						xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"
+						draw:mime-type="image/png" />
+				</draw:frame>
+			</text:p>
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P22" />
+			<text:p text:style-name="P23"><text:tab />Половина диска отдана windows, половина linux.
+				Выбран дистрибутив <text:span text:style-name="T13">mint</text:span>. Создано 3
+				раздела (#<text:span text:style-name="T13">5</text:span>-#<text:span
+					text:style-name="T13">7</text:span>) для системы, для файла подкачки и домашний
+				раздел пользователя.</text:p>
+			<text:p text:style-name="P23" />
+			<text:p text:style-name="P23" />
+			<text:p text:style-name="P23" />
+			<text:p text:style-name="P23" />
+			<text:p text:style-name="P23" />
+			<text:p text:style-name="P23" />
+			<text:p text:style-name="P24"><text:soft-page-break /><text:tab />Карта дискового
+				пространства из системы linux:</text:p>
+			<text:p text:style-name="P25">
+				<draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="char"
+					svg:x="0in" svg:y="0.022in" svg:width="6.4965in" svg:height="1.4902in"
+					draw:z-index="0">
+					<draw:image xlink:href="Pictures/10000001000002DC000000A8B46A52BC.png"
+						xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"
+						draw:mime-type="image/png" />
+				</draw:frame>
+			</text:p>
+			<text:p text:style-name="P26"><text:tab />Карта дискового пространства из системы
+				windows:</text:p>
+			<text:p text:style-name="P20">
+				<draw:frame draw:style-name="fr2" draw:name="Image4" text:anchor-type="char"
+					svg:width="6.4965in" svg:height="1.0236in" draw:z-index="2">
+					<draw:image xlink:href="Pictures/100000010000039E000000923F15547C.png"
+						xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"
+						draw:mime-type="image/png" />
+				</draw:frame>
+			</text:p>
+			<text:p text:style-name="P27"><text:tab />Меню GRUB с вариантами запуска linux и
+				windows:</text:p>
+			<text:p text:style-name="P28">
+				<draw:frame draw:style-name="fr3" draw:name="Image3" text:anchor-type="char"
+					svg:width="6.4965in" svg:height="1.2409in" draw:z-index="1">
+					<draw:image xlink:href="Pictures/10000001000003F2000000C1B7B82672.png"
+						xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"
+						draw:mime-type="image/png" />
+				</draw:frame>
+			</text:p>
+			<text:p text:style-name="P29"><text:span text:style-name="T11">
+					<text:tab />
+				</text:span><text:span text:style-name="T14">Вывод: </text:span>
+				научи<text:span text:style-name="T15">лись</text:span> устанавливать Linux, <text:span
+					text:style-name="T12">п</text:span>ознакоми<text:span text:style-name="T15">лись</text:span>
+				с MBR и GPT, изучи<text:span text:style-name="T15">ли</text:span> процесс загрузки
+				операционной системы.</text:p>
+		</office:text>
+	</office:body>
+</office:document-content>

@@ -1,4 +1,4 @@
-package docx
+package odt
 
 import (
 	"bytes"
@@ -10,7 +10,7 @@ import (
 	"github.com/trust-me-im-an-engineer/documentreader/internal/runes"
 )
 
-const ContentPath = "word/document.xml"
+const ContentPath = "content.xml"
 
 var spaceRegex = regexp.MustCompile(`\s+`)
 
@@ -32,7 +32,10 @@ func ReadLimited(r io.Reader, limitRunes int64) ([]byte, error) {
 		startElem, ok := token.(xml.StartElement)
 
 		// Only interested in tokens that are [StartEmement] and have local name "t"
-		if !ok || startElem.Name.Local != "t" {
+		if !ok { //|| startElem.Name.Space != "text" {
+			continue
+		}
+		if !(startElem.Name.Local == "p" || startElem.Name.Local == "h" || startElem.Name.Local == "span") {
 			continue
 		}
 
@@ -44,6 +47,9 @@ func ReadLimited(r io.Reader, limitRunes int64) ([]byte, error) {
 		// Normalize into continuous sequence of words separated by single spaces with no spaces at the end
 		n := spaceRegex.ReplaceAll(paragraph, []byte(" "))
 		normalized := bytes.TrimSpace(n)
+		if len(normalized) == 0 {
+			continue
+		}
 
 		paragraphRuneLen := int64(utf8.RuneCount(normalized))
 

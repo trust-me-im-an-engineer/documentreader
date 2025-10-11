@@ -13,11 +13,11 @@ var ErrInvalidRune = errors.New("invalid utf-8 rune encountered")
 // If data contains less than x runes returns [io.UnexpectedEOF].
 // If invalid rune encountered returns [ErrInvalidRune].
 // In both cases already read runes returned.
-func Take(data []byte, x int) ([]byte, error) {
+func Take(data []byte, x int64) ([]byte, error) {
 	result := make([]byte, 0, x)
 
 	currentByteIndex := 0
-	runeCount := 0
+	runeCount := int64(0)
 
 	for runeCount < x {
 		if currentByteIndex >= len(data) {
