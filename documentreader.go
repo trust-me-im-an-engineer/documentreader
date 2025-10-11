@@ -31,14 +31,14 @@ var spaceRegex = regexp.MustCompile(`\s+`)
 func ReadLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath string, isText func(xml.StartElement) bool) ([]byte, error) {
 	zr, err := zip.NewReader(document, totalSize)
 	if err != nil {
-		return []byte{}, fmt.Errorf("invalid document: %v", err)
+		return []byte{}, fmt.Errorf("invalid document: %w", err)
 	}
 
 	for _, f := range zr.File {
 		if f.Name == contentPath {
 			rc, err := f.Open()
 			if err != nil {
-				return []byte{}, fmt.Errorf("invalid document: %v", err)
+				return []byte{}, fmt.Errorf("invalid document: %w", err)
 			}
 			defer rc.Close()
 
