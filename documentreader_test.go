@@ -15,14 +15,15 @@ func TestReadLimited(t *testing.T) {
 		contentPath string
 		checker     func(xml.StartElement) bool
 		golden      string
+		expectedErr error
 	}{
-		{"odt/document1.odt", 700, OdtContentPath, IsOdtText, "odt/title1.golden"},
-		{"odt/document3.odt", 700, OdtContentPath, IsOdtText, "odt/title3.golden"},
-		{"odt/document4.odt", 700, OdtContentPath, IsOdtText, "odt/title4.golden"},
-		{"odt/document4.odt", 9999, OdtContentPath, IsOdtText, "odt/title4.golden"},
-		{"docx/document1.docx", 700, DocxContentPath, IsDocxText, "docx/title1.golden"},
-		{"docx/document2.docx", 700, DocxContentPath, IsDocxText, "docx/title2.golden"},
-		{"docx/document3.docx", 700, DocxContentPath, IsDocxText, "docx/title3.golden"},
+		{"odt/document1.odt", 700, OdtContentPath, IsOdtText, "odt/title1.golden", nil},
+		{"odt/document3.odt", 700, OdtContentPath, IsOdtText, "odt/title3.golden", nil},
+		{"docx/document1.docx", 700, DocxContentPath, IsDocxText, "docx/title1.golden", nil},
+		{"docx/document2.docx", 700, DocxContentPath, IsDocxText, "docx/title2.golden", nil},
+		{"docx/document3.docx", 700, DocxContentPath, IsDocxText, "docx/title3.golden", nil},
+
+		{"odt/document4.odt", 9999, OdtContentPath, IsOdtText, "odt/title4.golden", io.ErrUnexpectedEOF},
 	}
 
 	for _, tt := range tests {
@@ -38,14 +39,14 @@ func TestReadLimited(t *testing.T) {
 		}
 		size := fi.Size()
 
+		got, err := ReadLimited(file, size, tt.limit, tt.contentPath, tt.checker)
+		if err != tt.expectedErr {
+			t.Fatalf("Reading %s got error '%v', want '%v'", tt.document, err, tt.expectedErr)
+		}
+
 		want, err := os.ReadFile("testdata/" + tt.golden)
 		if err != nil {
 			t.Fatalf("Failed to read %s: %v", tt.document, err)
-		}
-
-		got, err := ReadLimited(file, size, tt.limit, tt.contentPath, tt.checker)
-		if err != nil && err != io.ErrUnexpectedEOF {
-			t.Fatalf("Failed to parse text in %s: %v", tt.document, err)
 		}
 
 		if !slices.Equal(got, want) {
