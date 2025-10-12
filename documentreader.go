@@ -1,3 +1,4 @@
+// Package documentreader implements odt and docx reading.
 package documentreader
 
 import (
@@ -19,12 +20,13 @@ const (
 
 var spaceRegex = regexp.MustCompile(`\s+`)
 
-// ReadLimited reads text from docx or odt document.
+// ReadLimited reads text from odt or docx document.
 //
-// ReaderAt expected to be docx or odt; totalSize should match document size in bytes; limit is set in runes;
-// contentPath is path to content inside document; isText is type specific checker (use IsDocxText or IsOdtText).
+// ReaderAt expected to be odt or docx; totalSize should match document size in bytes; limit is set in runes;
+// contentPath is path to content inside document; isText is type specific checker (use IsOdtText or IsDocxText).
 //
 // Returned text is normalized into continious sequence of words separated by single spaces.
+// Note that text may end with space.
 // limitRunes counts normalized text (so sequence of spaces counts as one rune).
 //
 // If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
@@ -57,20 +59,21 @@ func ReadLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath 
 	return []byte{}, fmt.Errorf("invalid document: %s not found", contentPath)
 }
 
-// IsDocxText checks if [xml.StartElement] is docx's text tag
-func IsDocxText(se xml.StartElement) bool {
-	return se.Name.Local == "t"
-}
-
 // IsOdtText checks if [xml.StartElement] is one of odt's text tags
 func IsOdtText(se xml.StartElement) bool {
 	return (se.Name.Local == "p" || se.Name.Local == "h" || se.Name.Local == "span")
 }
 
+// IsDocxText checks if [xml.StartElement] is docx's text tag
+func IsDocxText(se xml.StartElement) bool {
+	return se.Name.Local == "t"
+}
+
 // readContentLimited extracts text from reader.
-// Reader expected to be either docx's word/document.xml or odt's content.xml.
+// Reader expected to be either odt's content.xml or docx's word/document.xml.
 //
 // Returned text is normalized into continious sequence of words separated by single spaces.
+// Note that text may end with space.
 // limitRunes set in runes and counts normalized text (so sequence of spaces counts as one rune).
 // If text is less than limit, returns all text and [io.ErrUnexpectedEOF].
 func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElement) bool) ([]byte, error) {
@@ -86,7 +89,7 @@ func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElem
 		startElem, ok := token.(xml.StartElement)
 
 		// Only interested in tokens that are [StartEmement] and text tag
-		// (different for docx and odt, so isText function is used)
+		// (different for odt and docx, so isText function is used)
 		if !ok || !isText(startElem) {
 			continue
 		}
