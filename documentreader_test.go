@@ -2,6 +2,7 @@ package documentreader
 
 import (
 	"encoding/xml"
+	"errors"
 	"io"
 	"os"
 	"slices"
@@ -55,7 +56,7 @@ func TestReadLimited(t *testing.T) {
 	}
 }
 
-func TestReadContentLimited(t *testing.T) {
+func TestReadContentLimited_Success(t *testing.T) {
 	var tests = []struct {
 		document string
 		limit    int64
@@ -64,8 +65,6 @@ func TestReadContentLimited(t *testing.T) {
 	}{
 		{"odt/content1.xml", 700, IsOdtText, "odt/title1.golden"},
 		{"odt/content3.xml", 700, IsOdtText, "odt/title3.golden"},
-		{"odt/content4.xml", 700, IsOdtText, "odt/title4.golden"},
-		{"odt/content4.xml", 9999, IsOdtText, "odt/title4.golden"},
 		{"docx/content1.xml", 700, IsDocxText, "docx/title1.golden"},
 		{"docx/content2.xml", 700, IsDocxText, "docx/title2.golden"},
 		{"docx/content3.xml", 700, IsDocxText, "docx/title3.golden"},
@@ -78,18 +77,60 @@ func TestReadContentLimited(t *testing.T) {
 		}
 		defer file.Close()
 
+		got, err := readContentLimited(file, tt.limit, tt.checker)
+		if err != nil {
+			t.Fatalf("Failed to read content from %v: %v", tt.document, err)
+		}
+
 		want, err := os.ReadFile("testdata/" + tt.golden)
 		if err != nil {
 			t.Fatalf("Failed to read %s: %v", tt.document, err)
 		}
 
-		got, err := readContentLimited(file, tt.limit, tt.checker)
-		if err != nil && err != io.ErrUnexpectedEOF {
-			t.Fatalf("Failed to parse text in %s: %v", tt.document, err)
-		}
-
 		if !slices.Equal(got, want) {
 			t.Errorf("\n%s:\n\t%s\n\n%s:\n\t%s\n", tt.document, got, tt.golden, want)
 		}
+	}
+}
+
+func TestReadContentLimited_Error_UnexpectedEOF(t *testing.T) {
+	content := "odt/content4.xml"
+	golden := "odt/title4.golden"
+
+	file, err := os.Open("testdata/" + content)
+	if err != nil {
+		t.Fatalf("Failed to open %s: %v", content, err)
+	}
+	defer file.Close()
+
+	got, err := readContentLimited(file, 99999, IsOdtText)
+
+	if err != io.ErrUnexpectedEOF {
+		t.Fatalf("Unexpected error reading %s: %v", content, err)
+	}
+
+	want, err := os.ReadFile("testdata/" + golden)
+	if err != nil {
+		t.Fatalf("Failed to read %s: %v", golden, err)
+	}
+
+	if !slices.Equal(got, want) {
+		t.Errorf("\n%s:\n\t%s\n\n%s:\n\t%s\n", content, got, golden, want)
+	}
+}
+
+func TestReadContentLimited_Error_Syntax(t *testing.T) {
+	content := "odt/invalid.xml"
+	file, err := os.Open("testdata/" + content)
+	if err != nil {
+		t.Fatalf("Failed to open %s: %v", content, err)
+	}
+	defer file.Close()
+
+	_, err = readContentLimited(file, 700, IsOdtText)
+
+	var syntaxErr *xml.SyntaxError
+	if !errors.As(err, &syntaxErr) {
+		t.Errorf("readContentLimited() error = %v, want an *xml.SyntaxError", err)
 	}
 }

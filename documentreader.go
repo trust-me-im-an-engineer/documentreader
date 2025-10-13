@@ -82,8 +82,11 @@ func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElem
 	runeLen := int64(0)
 	for {
 		token, err := decoder.Token()
-		if err != nil {
+		if err == io.EOF {
 			return text, io.ErrUnexpectedEOF
+		}
+		if err != nil {
+			return text, fmt.Errorf("invalid content: %w", err)
 		}
 
 		startElem, ok := token.(xml.StartElement)
