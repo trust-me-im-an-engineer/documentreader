@@ -17,11 +17,11 @@ func TestReadLimited_Success(t *testing.T) {
 		checker     func(xml.StartElement) bool
 		golden      string
 	}{
-		{"odt/document1.odt", 700, OdtContentPath, IsOdtText, "odt/title1.golden"},
-		{"odt/document3.odt", 700, OdtContentPath, IsOdtText, "odt/title3.golden"},
-		{"docx/document1.docx", 700, DocxContentPath, IsDocxText, "docx/title1.golden"},
-		{"docx/document2.docx", 700, DocxContentPath, IsDocxText, "docx/title2.golden"},
-		{"docx/document3.docx", 700, DocxContentPath, IsDocxText, "docx/title3.golden"},
+		{"odt/document1.odt", 700, contentPathODT, isODT, "odt/title1.golden"},
+		{"odt/document3.odt", 700, contentPathODT, isODT, "odt/title3.golden"},
+		{"docx/document1.docx", 700, contentPathDOCX, isDOCX, "docx/title1.golden"},
+		{"docx/document2.docx", 700, contentPathDOCX, isDOCX, "docx/title2.golden"},
+		{"docx/document3.docx", 700, contentPathDOCX, isDOCX, "docx/title3.golden"},
 	}
 
 	for _, tt := range tests {
@@ -37,7 +37,7 @@ func TestReadLimited_Success(t *testing.T) {
 		}
 		size := fi.Size()
 
-		got, err := ReadLimited(file, size, tt.limit, tt.contentPath, tt.checker)
+		got, err := readLimited(file, size, tt.limit, tt.contentPath, tt.checker)
 		if err != nil {
 			t.Fatalf("Unexpected error reading %s: %v", tt.document, err)
 		}
@@ -69,7 +69,7 @@ func TestReadLimited_Error_UnexpectedEOF(t *testing.T) {
 	}
 	size := fi.Size()
 
-	got, err := ReadLimited(file, size, 99999, OdtContentPath, IsOdtText)
+	got, err := readLimited(file, size, 99999, contentPathODT, isODT)
 	if err != io.ErrUnexpectedEOF {
 		t.Fatalf("Unexpected error reading %s: %v", document, err)
 	}
@@ -91,11 +91,11 @@ func TestReadContentLimited_Success(t *testing.T) {
 		checker  func(xml.StartElement) bool
 		golden   string
 	}{
-		{"odt/content1.xml", 700, IsOdtText, "odt/title1.golden"},
-		{"odt/content3.xml", 700, IsOdtText, "odt/title3.golden"},
-		{"docx/content1.xml", 700, IsDocxText, "docx/title1.golden"},
-		{"docx/content2.xml", 700, IsDocxText, "docx/title2.golden"},
-		{"docx/content3.xml", 700, IsDocxText, "docx/title3.golden"},
+		{"odt/content1.xml", 700, isODT, "odt/title1.golden"},
+		{"odt/content3.xml", 700, isODT, "odt/title3.golden"},
+		{"docx/content1.xml", 700, isDOCX, "docx/title1.golden"},
+		{"docx/content2.xml", 700, isDOCX, "docx/title2.golden"},
+		{"docx/content3.xml", 700, isDOCX, "docx/title3.golden"},
 	}
 
 	for _, tt := range tests {
@@ -131,7 +131,7 @@ func TestReadContentLimited_Error_UnexpectedEOF(t *testing.T) {
 	}
 	defer file.Close()
 
-	got, err := readContentLimited(file, 99999, IsOdtText)
+	got, err := readContentLimited(file, 99999, isODT)
 
 	if err != io.ErrUnexpectedEOF {
 		t.Fatalf("Unexpected error reading %s: %v", content, err)
@@ -155,7 +155,7 @@ func TestReadContentLimited_Error_Syntax(t *testing.T) {
 	}
 	defer file.Close()
 
-	_, err = readContentLimited(file, 700, IsOdtText)
+	_, err = readContentLimited(file, 700, isODT)
 
 	var syntaxErr *xml.SyntaxError
 	if !errors.As(err, &syntaxErr) {

@@ -14,23 +14,39 @@ import (
 )
 
 const (
-	DocxContentPath = "word/document.xml"
-	OdtContentPath  = "content.xml"
+	contentPathODT  = "content.xml"
+	contentPathDOCX = "word/document.xml"
 )
 
 var spaceRegex = regexp.MustCompile(`\s+`)
 
-// ReadLimited reads text from odt or docx document.
+// readLimitedODT reads text from ODT document.
 //
 // ReaderAt expected to be odt or docx; totalSize should match document size in bytes; limit is set in runes;
-// contentPath is path to content inside document; isText is type specific checker (use IsOdtText or IsDocxText).
 //
 // Returned text is normalized into continious sequence of words separated by single spaces.
 // Note that text may end with space.
 // limitRunes counts normalized text (so sequence of spaces counts as one rune).
 //
 // If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
-func ReadLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath string, isText func(xml.StartElement) bool) ([]byte, error) {
+func ReadLimitedODT(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
+	return readLimited(document, totalSize, limitRunes, contentPathODT, isODT)
+}
+
+// readLimited reads text from DOCX document.
+//
+// ReaderAt expected to be odt or docx; totalSize should match document size in bytes; limit is set in runes;
+//
+// Returned text is normalized into continious sequence of words separated by single spaces.
+// Note that text may end with space.
+// limitRunes counts normalized text (so sequence of spaces counts as one rune).
+//
+// If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].share one underlying readLimited.
+func ReadLimitedDOCX(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
+	return readLimited(document, totalSize, limitRunes, contentPathDOCX, isDOCX)
+}
+
+func readLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath string, isText func(xml.StartElement) bool) ([]byte, error) {
 	zr, err := zip.NewReader(document, totalSize)
 	if err != nil {
 		return []byte{}, fmt.Errorf("invalid document: %w", err)
@@ -59,13 +75,13 @@ func ReadLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath 
 	return []byte{}, fmt.Errorf("invalid document: %s not found", contentPath)
 }
 
-// IsOdtText checks if [xml.StartElement] is one of odt's text tags
-func IsOdtText(se xml.StartElement) bool {
+// isODT checks if [xml.StartElement] is one of odt's text tags
+func isODT(se xml.StartElement) bool {
 	return (se.Name.Local == "p" || se.Name.Local == "h" || se.Name.Local == "span")
 }
 
-// IsDocxText checks if [xml.StartElement] is docx's text tag
-func IsDocxText(se xml.StartElement) bool {
+// isDOCX checks if [xml.StartElement] is docx's text tag
+func isDOCX(se xml.StartElement) bool {
 	return se.Name.Local == "t"
 }
 
