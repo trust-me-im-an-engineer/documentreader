@@ -9,6 +9,7 @@ import (
 )
 
 // Basic usage of ReadLimitedODT.
+//
 // ReadLimitedDOCX is identical with the only difference of expecting DOCX file instead.
 func ExampleReadLimitedODT() {
 	// One of the ways to get io.ReaderAt is to open file.

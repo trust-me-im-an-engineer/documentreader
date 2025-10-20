@@ -41,7 +41,7 @@ func ReadLimitedODT(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, 
 // Note that text may end with space.
 // limitRunes counts normalized text (so sequence of spaces counts as one rune).
 //
-// If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].share one underlying readLimited.
+// If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
 func ReadLimitedDOCX(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
 	return readLimited(document, totalSize, limitRunes, contentPathDOCX, isDOCX)
 }
