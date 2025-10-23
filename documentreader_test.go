@@ -56,6 +56,26 @@ func TestReadLimited_Success(t *testing.T) {
 	}
 }
 
+func TestReadLimited_Error_InvalidDocument(t *testing.T) {
+	document := "odt/invalid_format.doc"
+
+	file, err := os.Open("testdata/" + document)
+	if err != nil {
+		t.Fatalf("failed to read %s: %v", document, err)
+	}
+	defer file.Close()
+
+	fi, err := file.Stat()
+	if err != nil {
+		t.Fatalf("failed to get %s info: %v", document, err)
+	}
+	size := fi.Size()
+
+	if _, err := readLimited(file, size, 100, contentPathODT, isODT); !errors.Is(err, ErrContentNotFound) {
+		t.Fatalf("expected ErrContentNotFound, got %v", err)
+	}
+}
+
 func TestReadLimited_Error_UnexpectedEOF(t *testing.T) {
 	document := "odt/document4.odt"
 	golden := "odt/long4.golden"
