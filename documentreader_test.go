@@ -50,8 +50,7 @@ func TestReadLimited_Success(t *testing.T) {
 			}
 
 			if diff := cmp.Diff(want, got); diff != "" {
-				t.Logf("Got:\n%s", got)
-				t.Errorf("ReadLimited_Success() mismatch (-want +got):\n%s", diff)
+				t.Errorf("output mismatch (-want +got):\n%s\ngot:\n%s\n", diff, got)
 			}
 		})
 	}
@@ -84,7 +83,7 @@ func TestReadLimited_Error_UnexpectedEOF(t *testing.T) {
 	}
 
 	if diff := cmp.Diff(want, got); diff != "" {
-		t.Errorf("ReadLimited_UnexpectedEOF() mismatch (-want +got):\n%s", diff)
+		t.Errorf("output mismatch (-want +got):\n%s\ngot:\n%s\n", diff, got)
 	}
 }
 
@@ -103,25 +102,27 @@ func TestReadContentLimited_Success(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		file, err := os.Open("testdata/" + tt.document)
-		if err != nil {
-			t.Fatalf("Failed to open %s: %v", tt.document, err)
-		}
-		defer file.Close()
+		t.Run(tt.document, func(t *testing.T) {
+			file, err := os.Open("testdata/" + tt.document)
+			if err != nil {
+				t.Fatalf("Failed to open %s: %v", tt.document, err)
+			}
+			defer file.Close()
 
-		got, err := readContentLimited(file, tt.limit, tt.checker)
-		if err != nil {
-			t.Fatalf("Failed to read content from %v: %v", tt.document, err)
-		}
+			got, err := readContentLimited(file, tt.limit, tt.checker)
+			if err != nil {
+				t.Fatalf("Failed to read content from %v: %v", tt.document, err)
+			}
 
-		want, err := os.ReadFile("testdata/" + tt.golden)
-		if err != nil {
-			t.Fatalf("Failed to read %s: %v", tt.document, err)
-		}
+			want, err := os.ReadFile("testdata/" + tt.golden)
+			if err != nil {
+				t.Fatalf("Failed to read %s: %v", tt.document, err)
+			}
 
-		if diff := cmp.Diff(want, got); diff != "" {
-			t.Errorf("ReadContentLimited_Success() mismatch (-want +got):\n%s", diff)
-		}
+			if diff := cmp.Diff(want, got); diff != "" {
+				t.Errorf("output mismatch (-want +got):\n%s\ngot:\n%s\n", diff, got)
+			}
+		})
 	}
 }
 
@@ -147,7 +148,7 @@ func TestReadContentLimited_Error_UnexpectedEOF(t *testing.T) {
 	}
 
 	if diff := cmp.Diff(want, got); diff != "" {
-		t.Errorf("ReadContentLimited_UnexpectedEOF() mismatch (-want +got):\n%s", diff)
+		t.Errorf("output mismatch (-want +got):\n%s\ngot:\n%s\n", diff, got)
 	}
 }
 
