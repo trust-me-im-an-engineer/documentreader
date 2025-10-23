@@ -5,6 +5,7 @@ import (
 	"archive/zip"
 	"bytes"
 	"encoding/xml"
+	"errors"
 	"fmt"
 	"io"
 	"regexp"
@@ -18,7 +19,12 @@ const (
 	contentPathDOCX = "word/document.xml"
 )
 
-var spaceRegex = regexp.MustCompile(`\s+`)
+var (
+	ErrInvalidDocument = errors.New("invalid document")
+	ErrContentNotFound = errors.New("content path not found")
+
+	spaceRegex = regexp.MustCompile(`\s+`)
+)
 
 // readLimitedODT reads text from ODT document.
 //
@@ -51,14 +57,14 @@ func ReadLimitedDOCX(document io.ReaderAt, totalSize, limitRunes int64) ([]byte,
 func readLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath string, isText func(xml.StartElement) bool) ([]byte, error) {
 	zr, err := zip.NewReader(document, totalSize)
 	if err != nil {
-		return []byte{}, fmt.Errorf("invalid document: %w", err)
+		return nil, fmt.Errorf("%w: %v", ErrInvalidDocument, err)
 	}
 
 	for _, f := range zr.File {
 		if f.Name == contentPath {
 			rc, err := f.Open()
 			if err != nil {
-				return []byte{}, fmt.Errorf("invalid document: %w", err)
+				return nil, fmt.Errorf("%w: %v", ErrInvalidDocument, err)
 			}
 			defer rc.Close()
 
@@ -67,14 +73,14 @@ func readLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath 
 				return text, err
 			}
 			if err != nil {
-				return []byte{}, err
+				return nil, err
 			}
 
 			return text, nil
 		}
 	}
 
-	return []byte{}, fmt.Errorf("invalid document: %s not found", contentPath)
+	return nil, fmt.Errorf("%w: %s", ErrContentNotFound, contentPath)
 }
 
 // isODT checks if [xml.StartElement] is one of odt's text tags
@@ -155,25 +161,26 @@ func extractText(decoder *xml.Decoder, start xml.StartElement) ([]byte, error) {
 	for {
 		tok, err := decoder.Token()
 		if err != nil {
-			return nil, err
+			if err == io.EOF {
+				// Unexpected EOF — document structure broken
+				return nil, fmt.Errorf("%w: unexpected EOF inside <%s>", ErrInvalidDocument, start.Name.Local)
+			}
+			// Wrap all other tokenization errors
+			return nil, fmt.Errorf("%w: failed to read token inside <%s>: %v", ErrInvalidDocument, start.Name.Local, err)
 		}
 
 		switch t := tok.(type) {
-
-		// collect text content
 		case xml.CharData:
 			buf.Write([]byte(t))
-			buf.WriteByte(byte(' '))
+			buf.WriteByte(' ')
 
-		// recursively handle nested elements
 		case xml.StartElement:
 			child, err := extractText(decoder, t)
 			if err != nil {
-				return nil, err
+				return nil, fmt.Errorf("%w: nested element <%s>: %v", ErrInvalidDocument, t.Name.Local, err)
 			}
 			buf.Write(child)
 
-		// return collected text
 		case xml.EndElement:
 			if t.Name.Local == start.Name.Local {
 				return buf.Bytes(), nil
