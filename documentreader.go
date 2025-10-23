@@ -22,11 +22,12 @@ var spaceRegex = regexp.MustCompile(`\s+`)
 
 // readLimitedODT reads text from ODT document.
 //
-// ReaderAt expected to be odt or docx; totalSize should match document size in bytes; limit is set in runes;
+// document expected to be odt; totalSize should match document size in bytes; limit is set in runes;
 //
 // Returned text is normalized into continious sequence of words separated by single spaces.
-// Note that text may end with space.
 // limitRunes counts normalized text (so sequence of spaces counts as one rune).
+//
+// Note: text may have single space at the end.
 //
 // If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
 func ReadLimitedODT(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
@@ -35,11 +36,12 @@ func ReadLimitedODT(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, 
 
 // readLimited reads text from DOCX document.
 //
-// ReaderAt expected to be odt or docx; totalSize should match document size in bytes; limit is set in runes;
+// document expected to be docx; totalSize should match document size in bytes; limit is set in runes;
 //
 // Returned text is normalized into continious sequence of words separated by single spaces.
-// Note that text may end with space.
 // limitRunes counts normalized text (so sequence of spaces counts as one rune).
+//
+// Note: text may have single space at the end.
 //
 // If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
 func ReadLimitedDOCX(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
@@ -89,7 +91,9 @@ func isDOCX(se xml.StartElement) bool {
 // Reader expected to be either odt's content.xml or docx's word/document.xml.
 //
 // Returned text is normalized into continious sequence of words separated by single spaces.
-// Note that text may end with space.
+//
+// Note: text may have single space at the end.
+//
 // limitRunes set in runes and counts normalized text (so sequence of spaces counts as one rune).
 // If text is less than limit, returns all text and [io.ErrUnexpectedEOF].
 func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElement) bool) ([]byte, error) {
@@ -113,9 +117,9 @@ func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElem
 			continue
 		}
 
-		paragraph := []byte{}
-		if err := decoder.DecodeElement(&paragraph, &startElem); err != nil {
-			panic(err)
+		paragraph, err := extractText(decoder, startElem)
+		if err != nil {
+			return text, fmt.Errorf("failed to extract text: %w", err)
 		}
 
 		// Normalize into continuous sequence of words separated by single spaces with no spaces at the end
@@ -140,5 +144,40 @@ func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElem
 		text = append(text, normalized...)
 		text = append(text, byte(' '))
 		runeLen += paragraphRuneLen
+	}
+}
+
+// extractText recursivelly decodes given start element.
+// It's similar to xml decoder.DecodeElement() but with nested text too.
+func extractText(decoder *xml.Decoder, start xml.StartElement) ([]byte, error) {
+	var buf bytes.Buffer
+
+	for {
+		tok, err := decoder.Token()
+		if err != nil {
+			return nil, err
+		}
+
+		switch t := tok.(type) {
+
+		// collect text content
+		case xml.CharData:
+			buf.Write([]byte(t))
+			buf.WriteByte(byte(' '))
+
+		// recursively handle nested elements
+		case xml.StartElement:
+			child, err := extractText(decoder, t)
+			if err != nil {
+				return nil, err
+			}
+			buf.Write(child)
+
+		// return collected text
+		case xml.EndElement:
+			if t.Name.Local == start.Name.Local {
+				return buf.Bytes(), nil
+			}
+		}
 	}
 }

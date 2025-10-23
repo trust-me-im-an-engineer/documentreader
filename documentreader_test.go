@@ -5,8 +5,9 @@ import (
 	"errors"
 	"io"
 	"os"
-	"slices"
 	"testing"
+
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestReadLimited_Success(t *testing.T) {
@@ -25,37 +26,40 @@ func TestReadLimited_Success(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		file, err := os.Open("testdata/" + tt.document)
-		if err != nil {
-			t.Fatalf("Failed to read %s: %v", tt.document, err)
-		}
-		defer file.Close()
+		t.Run(tt.document, func(t *testing.T) {
+			file, err := os.Open("testdata/" + tt.document)
+			if err != nil {
+				t.Fatalf("Failed to read %s: %v", tt.document, err)
+			}
+			defer file.Close()
 
-		fi, err := file.Stat()
-		if err != nil {
-			t.Fatalf("Failed to get %s info: %v", tt.document, err)
-		}
-		size := fi.Size()
+			fi, err := file.Stat()
+			if err != nil {
+				t.Fatalf("Failed to get %s info: %v", tt.document, err)
+			}
+			size := fi.Size()
 
-		got, err := readLimited(file, size, tt.limit, tt.contentPath, tt.checker)
-		if err != nil {
-			t.Fatalf("Unexpected error reading %s: %v", tt.document, err)
-		}
+			got, err := readLimited(file, size, tt.limit, tt.contentPath, tt.checker)
+			if err != nil {
+				t.Fatalf("Unexpected error reading %s: %v", tt.document, err)
+			}
 
-		want, err := os.ReadFile("testdata/" + tt.golden)
-		if err != nil {
-			t.Fatalf("Failed to read %s: %v", tt.document, err)
-		}
+			want, err := os.ReadFile("testdata/" + tt.golden)
+			if err != nil {
+				t.Fatalf("Failed to read %s: %v", tt.document, err)
+			}
 
-		if !slices.Equal(got, want) {
-			t.Errorf("\n%s:\n\t%s\n\n%s:\n\t%s\n", tt.document, got, tt.golden, want)
-		}
+			if diff := cmp.Diff(want, got); diff != "" {
+				t.Logf("Got:\n%s", got)
+				t.Errorf("ReadLimited_Success() mismatch (-want +got):\n%s", diff)
+			}
+		})
 	}
 }
 
 func TestReadLimited_Error_UnexpectedEOF(t *testing.T) {
 	document := "odt/document4.odt"
-	golden := "odt/title4.golden"
+	golden := "odt/long4.golden"
 
 	file, err := os.Open("testdata/" + document)
 	if err != nil {
@@ -79,8 +83,8 @@ func TestReadLimited_Error_UnexpectedEOF(t *testing.T) {
 		t.Fatalf("Failed to read %s: %v", document, err)
 	}
 
-	if !slices.Equal(got, want) {
-		t.Errorf("\n%s:\n\t%s\n\n%s:\n\t%s\n", document, got, golden, want)
+	if diff := cmp.Diff(want, got); diff != "" {
+		t.Errorf("ReadLimited_UnexpectedEOF() mismatch (-want +got):\n%s", diff)
 	}
 }
 
@@ -115,15 +119,15 @@ func TestReadContentLimited_Success(t *testing.T) {
 			t.Fatalf("Failed to read %s: %v", tt.document, err)
 		}
 
-		if !slices.Equal(got, want) {
-			t.Errorf("\n%s:\n\t%s\n\n%s:\n\t%s\n", tt.document, got, tt.golden, want)
+		if diff := cmp.Diff(want, got); diff != "" {
+			t.Errorf("ReadContentLimited_Success() mismatch (-want +got):\n%s", diff)
 		}
 	}
 }
 
 func TestReadContentLimited_Error_UnexpectedEOF(t *testing.T) {
 	content := "odt/content4.xml"
-	golden := "odt/title4.golden"
+	golden := "odt/long4.golden"
 
 	file, err := os.Open("testdata/" + content)
 	if err != nil {
@@ -142,8 +146,8 @@ func TestReadContentLimited_Error_UnexpectedEOF(t *testing.T) {
 		t.Fatalf("Failed to read %s: %v", golden, err)
 	}
 
-	if !slices.Equal(got, want) {
-		t.Errorf("\n%s:\n\t%s\n\n%s:\n\t%s\n", content, got, golden, want)
+	if diff := cmp.Diff(want, got); diff != "" {
+		t.Errorf("ReadContentLimited_UnexpectedEOF() mismatch (-want +got):\n%s", diff)
 	}
 }
 
