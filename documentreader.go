@@ -10,8 +10,6 @@ import (
 	"io"
 	"regexp"
 	"unicode/utf8"
-
-	"github.com/trust-me-im-an-engineer/documentreader/internal/runes"
 )
 
 const (
@@ -26,35 +24,35 @@ var (
 	spaceRegex = regexp.MustCompile(`\s+`)
 )
 
-// readLimitedODT reads text from ODT document.
+// ReadLimitedODT reads text from ODT document limited by specified number of bytes.
 //
-// document expected to be odt; totalSize should match document size in bytes; limit is set in runes;
+// document expected to be odt; totalSize should match document size in bytes; limit is set in bytes.
 //
-// Returned text is normalized into continious sequence of words separated by single spaces.
-// limitRunes counts normalized text (so sequence of spaces counts as one rune).
+// Text is normalized into continious sequence of words separated by single spaces.
+// limit counts normalized text (e.g. sequence of spaces in document would count as one byte).
 //
-// Note: text may have single space at the end.
+// Note: returned text may be up to 3 bytes shorter than limit without error for the sake of rune integrity.
 //
-// If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
-func ReadLimitedODT(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
-	return readLimited(document, totalSize, limitRunes, contentPathODT, isODT)
+// If text's length is less than limit, returns all text and [io.ErrUnexpectedEOF].
+func ReadLimitedODT(document io.ReaderAt, totalSize, limit int64) ([]byte, error) {
+	return readLimited(document, totalSize, limit, contentPathODT, isODT)
 }
 
-// readLimited reads text from DOCX document.
+// ReadLimitedDOCX reads text from DOCX document limited by specified number of bytes.
 //
-// document expected to be docx; totalSize should match document size in bytes; limit is set in runes;
+// document expected to be docx; totalSize should match document size in bytes; limit is set in bytes.
 //
-// Returned text is normalized into continious sequence of words separated by single spaces.
-// limitRunes counts normalized text (so sequence of spaces counts as one rune).
+// Text is normalized into continious sequence of words separated by single spaces.
+// limit counts normalized text (e.g. sequence of spaces in document would count as one byte).
 //
-// Note: text may have single space at the end.
+// Note: returned text may be up to 3 bytes shorter than limit without error for the sake of rune integrity.
 //
-// If text length is less than limit, returns all text and [io.ErrUnexpectedEOF].
-func ReadLimitedDOCX(document io.ReaderAt, totalSize, limitRunes int64) ([]byte, error) {
-	return readLimited(document, totalSize, limitRunes, contentPathDOCX, isDOCX)
+// If text's length is less than limit, returns all text and [io.ErrUnexpectedEOF].
+func ReadLimitedDOCX(document io.ReaderAt, totalSize, limit int64) ([]byte, error) {
+	return readLimited(document, totalSize, limit, contentPathDOCX, isDOCX)
 }
 
-func readLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath string, isText func(xml.StartElement) bool) ([]byte, error) {
+func readLimited(document io.ReaderAt, totalSize, limit int64, contentPath string, isText func(xml.StartElement) bool) ([]byte, error) {
 	zr, err := zip.NewReader(document, totalSize)
 	if err != nil {
 		return nil, fmt.Errorf("%w: %v", ErrInvalidDocument, err)
@@ -68,7 +66,7 @@ func readLimited(document io.ReaderAt, totalSize, limitRunes int64, contentPath 
 			}
 			defer rc.Close()
 
-			text, err := readContentLimited(rc, limitRunes, isText)
+			text, err := readContentLimited(rc, limit, isText)
 			if err == io.ErrUnexpectedEOF {
 				return text, err
 			}
@@ -93,19 +91,9 @@ func isDOCX(se xml.StartElement) bool {
 	return se.Name.Local == "t"
 }
 
-// readContentLimited extracts text from reader.
-// Reader expected to be either odt's content.xml or docx's word/document.xml.
-//
-// Returned text is normalized into continious sequence of words separated by single spaces.
-//
-// Note: text may have single space at the end.
-//
-// limitRunes set in runes and counts normalized text (so sequence of spaces counts as one rune).
-// If text is less than limit, returns all text and [io.ErrUnexpectedEOF].
-func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElement) bool) ([]byte, error) {
+func readContentLimited(r io.Reader, limit int64, isText func(xml.StartElement) bool) ([]byte, error) {
 	decoder := xml.NewDecoder(r)
-	text := make([]byte, 0, limitRunes)
-	runeLen := int64(0)
+	text := make([]byte, 0, limit)
 	for {
 		token, err := decoder.Token()
 		if err == io.EOF {
@@ -135,21 +123,14 @@ func readContentLimited(r io.Reader, limitRunes int64, isText func(xml.StartElem
 			continue
 		}
 
-		paragraphRuneLen := int64(utf8.RuneCount(normalized))
-
-		if runeLen+paragraphRuneLen >= limitRunes {
-			sliced, err := runes.Take(normalized, limitRunes-runeLen)
-			if err != nil {
-				// Should never happen since size to take is checked and xml validates runes
-				panic(err)
-			}
-			text = append(text, sliced...)
-			return text, nil
+		// Check if text is long enough and slice oversized part
+		if int64(len(text))+int64(len(normalized)) >= limit {
+			text = append(text, normalized[:limit-int64(len(text))]...)
+			return trimIncompleteRune(text), nil
 		}
 
 		text = append(text, normalized...)
 		text = append(text, byte(' '))
-		runeLen += paragraphRuneLen
 	}
 }
 
@@ -187,4 +168,30 @@ func extractText(decoder *xml.Decoder, start xml.StartElement) ([]byte, error) {
 			}
 		}
 	}
+}
+
+func trimIncompleteRune(b []byte) []byte {
+	if len(b) == 0 {
+		return b
+	}
+
+	// Check the last rune
+	i := len(b)
+	for i > 0 && (b[i-1]&0xC0) == 0x80 {
+		// It's a UTF-8 continuation byte (10xxxxxx)
+		i--
+	}
+
+	if i == 0 {
+		// All bytes were continuation bytes — invalid start
+		return []byte{}
+	}
+
+	r, _ := utf8.DecodeRune(b[i-1:])
+	if r == utf8.RuneError {
+		// Invalid/incomplete rune at the end
+		return b[:i-1]
+	}
+
+	return b
 }
