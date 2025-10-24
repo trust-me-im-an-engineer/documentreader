@@ -28,8 +28,8 @@ func ExampleReadLimitedODT() {
 
 	text, err := documentreader.ReadLimitedODT(file, size, 100)
 	if err == io.ErrUnexpectedEOF {
-		// io.ErrUnexpectedEOF means document text is shorter than runeLimit.
-		fmt.Printf("Document was shorter than 100 runes:\n%s", string(text))
+		// io.ErrUnexpectedEOF means document text is shorter than limit.
+		fmt.Printf("Document was shorter than 100 bytes:\n%s", string(text))
 	} else if err != nil {
 		fmt.Fprintln(os.Stderr, "unexpected error reading example.odt: ", err)
 	} else {
