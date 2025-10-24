@@ -1,7 +1,7 @@
+[![GoDev](https://img.shields.io/static/v1?label=godev&message=reference&color=00add8)](https://pkg.go.dev/github.com/trust-me-im-an-engineer/documentreader)
+
 # documentreader
 Package documentreader implements odt and docx reading.
-
-Documentation could be found on https://pkg.go.dev/github.com/trust-me-im-an-engineer/documentreader
 
 # example
 Call documentreader.ReadlimitedODT with file, file size and limit like this:
